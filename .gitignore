@@ -1,0 +1,4 @@
+bin/
+lib/
+pip*
+__pycache__/
