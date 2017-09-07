@@ -2,10 +2,7 @@ import re
 
 
 from bs4 import BeautifulSoup
-
-
-DEBUG = False
-# DEBUG = True  # for debug uncomment
+from flask.helpers import get_debug_flag
 
 
 def apply_processors_chain(to_string):
@@ -47,7 +44,7 @@ def change_hyphens_by_sintac_dashes(in_str):
 
 
 def get_nbsp():
-    if DEBUG:
+    if get_debug_flag():
         return '+'
     return '\u00A0'
 

@@ -9,7 +9,12 @@ Example of launch on Linux, Python 3.5:
 
 ```bash
 $ pip install -r requirements.txt # alternatively try pip3
-$ python3 server.py
+
+$ export FLASK_DEBUG=1 # use to show '+' chars instead of 'No-Break Space'
+
+$ export FLASK_DEBUG=0 # use to exit debug mode
+
+$ python3 server.py # 'ctrl + C' to stop server
 ```
 
 Open page [http://localhost:5000](http://localhost:5000) in browser.
